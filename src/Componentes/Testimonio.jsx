@@ -8,11 +8,11 @@ function Testimonio(props) {
         <div className='contenedor-testimonio'>
             <img
                 className='imagen-testimonio'
-                src={imagenes.imgen1}    
+                src={imagenes.imgen5}    
                 alt='Efrain'
             />
             <div className='contenerdor-texto-testimonio'>
-                <p className='nombre-testimonio'> <strong>{props.nombre}</strong>  en {props.pais} </p>
+                <p className='nombre-testimonio'> <strong>{props.nombre}</strong> <br/>  {props.pais} </p>
                 <p className='cargo-testimonio'> {props.cargo} Para <strong>{props.empresa}</strong> </p>
                 <p className='texto-testimonio'>{props.parrafo}</p>
             </div>

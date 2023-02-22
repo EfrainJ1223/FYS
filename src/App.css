@@ -54,20 +54,19 @@ body {
   background-color: #f5f6f7;
 }
 
-.h1{
-  max-width: 940px;
+.h1 {
+  max-width: 600px;
   font-size: 2.5em;
   font-family: Lato, sans-serif;
   font-weight: 700px;
   line-height: 1.1;
-  margin: 40px 0;
+  margin: 40px 20px;
+
 }
 
 
-
-
 .contenedor-principal {
-  /*min-height: 600px;*/
+  min-height: 600px;
   flex-wrap: wrap;
   align-items: center;
   display: flex;
