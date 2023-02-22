@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.navbar {
+    background: linear-gradient(to bottom right, white, #138E89);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_nav {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px;
+    color: black;
+}
+
+.img_logo {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    color: black;
+}
+
+.nav_items a {
+    margin: 15px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav_boton {
+    display: none;
+}
+
+a {
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.What{
+    background: #25CF15;
+}
+
+a:hover {
+    background: black;
+    transition: 0.5s;
+    margin: 8px;
+}
+
+
+.img_logo{
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 /9%);
+}
+
+@media (max-width: 768px) {
+    .nav_items {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #138E89;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        /*height: -webkit-fill-available;
+        /*Esta lo que hace ocultar el menu de Hamburquesa*/
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
+    }
+
+    /*Se agrega un clase para manipular los items cuendo este escondido*/
+    .nav_items.open {
+        transform: translateX(0) !important
+    }
+
+    .nav_boton {
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .nav_boton span {
+        width: 30px;
+        height: 4px;
+        background: white;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+
+    }
+
+    /*Con esta clase podemos mosvet los items
+    vamos hacer que roten los item*/
+    .nav_boton.open>span {
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+
+
+
+    .nav_boton.open>span:nth-child(2) {
+        display: none;
+    }
+
+    .nav_boton.open>span:nth-child(3) {
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+
+}
